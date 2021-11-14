@@ -1,6 +1,6 @@
-package com.geekbrains.spring.web.repositories;
+package com.buyukli.ivan.repositories;
 
-import com.geekbrains.spring.web.data.Product;
+import com.buyukli.ivan.data.Product;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
@@ -16,10 +16,10 @@ public class ProductRepository {
     public void init() {
         products = new ArrayList<>(List.of(
                 new Product(1L, "Cucumber", "1.25"),
-                new Product(2L, "Bread","0.98"),
-                new Product(3L, "Vodka","5.45"),
-                new Product(4L, "Tomato","1.28"),
-                new Product(5L, "Cigarettes","7.0")
+                new Product(2L, "Bread", "0.98"),
+                new Product(3L, "Vodka", "5.45"),
+                new Product(4L, "Tomato", "1.28"),
+                new Product(5L, "Cigarettes", "7.0")
         ));
     }
 

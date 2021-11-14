@@ -1,7 +1,7 @@
-package com.geekbrains.spring.web.services;
+package com.buyukli.ivan.services;
 
-import com.geekbrains.spring.web.data.Product;
-import com.geekbrains.spring.web.repositories.ProductRepository;
+import com.buyukli.ivan.repositories.ProductRepository;
+import com.buyukli.ivan.data.Product;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,11 +19,11 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    public Product getProductById(Long id){
+    public Product getProductById(Long id) {
         return productRepository.findById(id);
     }
 
-    public List<Product> getAllProducts(){
+    public List<Product> getAllProducts() {
         return Collections.unmodifiableList(productRepository.findAllProducts());
     }
 

@@ -1,4 +1,4 @@
-package com.geekbrains.spring.web.data;
+package com.buyukli.ivan.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
