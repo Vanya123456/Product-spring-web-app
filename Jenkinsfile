@@ -35,5 +35,10 @@ pipeline {
                 }
             }
         }
+        stage("Deliver phase") {
+            steps {
+                echo "delivering"
+            }
+        }
     }
 }
